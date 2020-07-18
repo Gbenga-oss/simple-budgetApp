@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>budget</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <section id="top">
+        <div class="budget">
+            <div class="budget-title">Available Balance in July 2020:</div>
+            <div class="budget-value">0</div>
+            <div class="budget-summary">
+                <div class="budget-income">
+                    <div class="budget-income-title">Income</div>
+                    <div class="budget-income-value">0</div>
+                </div>
+                <div class="budget-expenses">
+                    <div class="budget-expenses-title">Expenses</div>
+                    <div class="budget-expenses-value">0</div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <section id="form">
+        <form id="add-form" >
+            <select class="options">
+                <option value="+">+</option>
+                <option value="-">-</option>
+            </select>
+            <input type="text" class="add-description" placeholder="Add description">
+            <input type="number" class="add-value" placeholder="Amt" min="0">
+            <button type="submit" class="add-btn">Add</button>
+        </form> 
+    </section>
+
+    <section id="bottom">
+        <div class="bottom-left">
+            <h3 class="title-1">Income</h3>
+        <div id="inc-items" class="list-group-1"></div>
+        </div>
+        <div class="bottom-right">
+            <h3 class="title-2">Expenses</h3>
+         <div id="exp-items" class="list-group-2"></div>
+        </div>
+    </section>
+    <script src="calc.js"></script>
+</body>
+
+</html>
