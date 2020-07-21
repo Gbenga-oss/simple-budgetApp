@@ -1,3 +1,10 @@
+// add current date
+let today = new Date();
+
+  let date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+
+  document.querySelector('.budget-title').innerHTML = 'Balance on'+' '+ date;
+
 // Add income
 function add(income, amount) {
     return Number(income) + Number(amount);
